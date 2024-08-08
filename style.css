@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container {
+  height: 75vh; /* Set height as a percentage of the viewport height */
+  width: 75vw; /* Set width as a percentage of the viewport width */
+  padding: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #003b5b;
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-sizing: border-box; /* Include padding and border in width/height calculations */
+  position: relative; /* Ensure scrolling works properly */
+  z-index: 2; /* Ensure the container is above the particles background */
+}
+form {
+  max-height: 100%; /* Allow form to scroll within container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between elements */
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+#submit {
+  border: none;
+  background-color: orangered;
+  color: white;
+  width: 100%; /* Ensure button spans the full width */
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px; /* Add padding for better appearance */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+#submit:hover {
+  background-color: #333333;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* optional: just in case the browser fails to apply the width */
+}
+.heading{
+  text-align: center;
+}
